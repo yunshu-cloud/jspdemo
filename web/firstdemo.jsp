@@ -11,18 +11,14 @@
     <title>Title</title>
 </head>
 <body>
-
-  <!--以20%概率显示你中奖了-->
   <%
     int flag = new Random().nextInt(100);
     String str = "";
     if(flag <= 20){
       str = "中奖了";
     }else{
-      str = "再试试";
+      str = "再试试";  
     }
   %>
-  <%= str%>
-  <%= flag%>
 </body>
 </html>
